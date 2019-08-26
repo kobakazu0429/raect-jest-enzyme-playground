@@ -7,7 +7,10 @@
   "scripts": {
     "build": "webpack --color --progress --config ./config/webpack.config.prod.js",
     "dev": "webpack-dev-server --config ./config/webpack.config.dev.js",
-    "lint": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}'"
+    "lint": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --verbose --coverage"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
@@ -16,12 +19,20 @@
     ]
   },
   "dependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.0",
     "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "ts-jest": "^24.0.2"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.18",
     "@types/node": "12.7.2",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
