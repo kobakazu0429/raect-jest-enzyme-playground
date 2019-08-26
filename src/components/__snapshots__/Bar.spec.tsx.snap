@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Bar /> should match the snapshot 1`] = `
+<div>
+  <p
+    id="name"
+  >
+    name: 
+    Taro
+  </p>
+  <p
+    id="age"
+  >
+    age: 
+    10
+  </p>
+  <input
+    onChange={[Function]}
+    type="number"
+    value={10}
+  />
+</div>
+`;
